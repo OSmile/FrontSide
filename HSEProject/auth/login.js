@@ -1,10 +1,9 @@
 window.onload = function() {
     var email = document.getElementById("email")
     var pass = document.getElementById("password")
-    var btn = document.getElementById("reg")
+    var btn = document.getElementById("btn")
 
     btn.addEventListener("click", function() {
-        alert(email)
-        alert(pass)
+        if (email && pass) alert("OK!")
     })
 }
