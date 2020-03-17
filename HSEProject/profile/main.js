@@ -8,11 +8,12 @@ window.onload = function() {
     if (btn != 0) {
         btn.addEventListener("click", function() {
             var inp = document.getElementById('inputText').value;
-            var div = document.createElement("div");
-            div.className = "rowe";
-            comments.style.height = 50 + Number(getComputedStyle(comments).height.slice(0, -2)) + 'px'
+            if (inp) {
+                var div = document.createElement("div");
+                div.className = "rowe";
+                comments.style.height = 50 + Number(getComputedStyle(comments).height.slice(0, -2)) + 'px'
 
-            div.innerHTML = `<div class="col-sm-1">
+                div.innerHTML = `<div class="col-sm-1">
                 <a href="#"><img src="../src/8c125dbdf1808dd9e322e2d294bd7303.png" width="50" alt="ava"></a>
             </div>
             <div class="col-sm-11">
@@ -31,9 +32,9 @@ window.onload = function() {
                     </div>
                 </div>
             </div>`;
-            inp.value = "";
-            docfrag.appendChild(div);
-
+                inp.value = "";
+                docfrag.appendChild(div);
+            }
         })
         comments.appendChild(docfrag)
 
