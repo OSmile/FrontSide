@@ -1,0 +1,140 @@
+body {
+    font-family: 'Montserrat', sans-serif !important;
+}
+
+a {
+    text-decoration: none !important;
+    color: rgb(136, 136, 136) !important;
+}
+
+header {
+    height: 80px;
+    background-color: #F6F7F7;
+    padding-top: 20px;
+}
+
+.body {
+    height: 80vh;
+    background-color: #F6F7F7;
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    height: auto;
+    background-color: #414141;
+    font-size: 12px;
+}
+
+.linksrow {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.copyright {
+    text-align: right;
+    padding-bottom: 20px;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: large;
+    text-align: left;
+}
+
+.logof {
+    font-size: 16px;
+    font-weight: bold;
+    color: white !important;
+}
+
+.auth {
+    text-align: right;
+}
+
+.name {
+    font-weight: bold;
+}
+
+.field {
+    background-color: white;
+    margin-left: 250px;
+    margin-right: 250px;
+    padding: 40px;
+    font-size: 10px !important;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+ul {
+    list-style-type: none;
+}
+
+hr {
+    border-top: #5B5B5B !important;
+    background-color: #5B5B5B !important;
+    height: 1px !important;
+}
+
+.info {
+    font-size: 13px;
+    font-weight: bold;
+    margin-left: 32px;
+}
+
+button {
+    background-color: #1FAF7E;
+    color: white !important;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    width: 250px;
+}
+
+button:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+}
+
+input {
+    padding: 15px;
+    width: 250px;
+    margin: 10px !important;
+    border-radius: 5px;
+    border: 1px solid rgb(170, 170, 170) !important;
+}
+
+.agree {
+    margin-top: 15px;
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+    outline: none;
+}
+
+.separator {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.separator::before,
+.separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+
+.separator::before {
+    margin-right: .25em;
+}
+
+.separator::after {
+    margin-left: .25em;
+}
