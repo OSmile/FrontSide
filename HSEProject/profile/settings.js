@@ -6,8 +6,9 @@ window.onload = function() {
 
     if (list) {
         list.addEventListener("click", function() {
+            var div = document.createElement("div");
             if (click) {
-                var div = document.createElement("div");
+
                 div.className = 'class="row"';
 
                 div.innerHTML = `<div class="col-sm-10"></div>
@@ -22,9 +23,12 @@ window.onload = function() {
             </div>`
                 div_menu.appendChild(div);
                 click = false;
+            } else {
+                div_menu.removeChild(div_menu.lastChild);
+                click = true;
             }
         })
-        head.appendChild(div_menu);
+        head.appendChild(div_menu)
     }
 
     var delete_btn = document.getElementById('delete');
