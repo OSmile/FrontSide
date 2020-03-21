@@ -26,6 +26,7 @@ footer {
     height: auto;
     background-color: #414141;
     font-size: 12px;
+    clear: both;
 }
 
 .linksrow {

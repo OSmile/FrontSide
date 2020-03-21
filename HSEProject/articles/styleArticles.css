@@ -20,10 +20,13 @@ header {
 }
 
 footer {
+    /*position: absolute;
+    bottom: 0; */
     color: white;
     height: auto;
     background-color: #414141;
     font-size: 12px;
+    clear: both;
 }
 
 .linksrow {
