@@ -27,15 +27,15 @@ window.onload = function() {
         head.appendChild(div_menu)
     }
 
-    var saveBtn = document.getElementById('save');
-    if (saveBtn) {
-        saveBtn.addEventListener("click", function() {
-            var name = document.getElementById('name').value;
-            var country = document.getElementById('country').value;
-            var city = document.getElementById('city').value;
-            console.log(name + " " + country + " " + city)
+    var btn = document.getElementById('btn');
+    if (btn) {
+        btn.addEventListener("click", function() {
+            var num = document.getElementById('num').value;
+            var question = document.getElementById('question').value;
+            var full_text = document.getElementById('text').value;
+            console.log(num + " " + question)
 
-            alert("Вы успешно сменили информацию")
+            alert("Вы успешно задали вопрос")
         })
     }
 }
