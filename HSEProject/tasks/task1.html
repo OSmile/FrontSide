@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styleTasks.css">
+    <title>Task 1</title>
+    <link rel="stylesheet" href="styleTask.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
-    <script src="tasks.js"></script>
+    <script src="https://cdn.jsdelivr.net/ace/1.2.3/min/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="task.js"></script>
 </head>
 
 <header id="head">
@@ -35,61 +36,64 @@
 
 <body>
     <div class="body">
-        <p class="name">Задачи</p>
-        <div class="rowe">
-            <input type="text" placeholder="Поиск...">
+        <p class="name">Задача</p>
+        <div class="field">
+            <p>Это ваша первая задача на HSERush! Вы можете писать Ваш код тут, либо добавлять файл из сторонней программы с выполненным заданием. <br> Начинаем! Дополнить программу, чтобы на экран выводилась строка "Hello world!".</p>
+            <textarea style="width: 95%; height: 70%;" contenteditable="true">
+                #include &lt;iostream&gt; 
+                    int main() {
+                        &nbsp;&nbsp;std::cout « "Hello!" « std::endl; 
+                        &nbsp;&nbsp;return 0;
+                }
+            </textarea>
+            <button>Отправить</button>
+            <button>Прикрепить файл</button>
         </div>
-        <div class="rowe">
-            <div class="col-sm-3 field">
-                <p><a href="#">nickname</a> 28 января 2020 года</p>
-                <a href="#" class="title">Амиго очень умный</a>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem obcaecati exercitationem</p>
-                <button class="opener">Доступна</button>
-                <p class="diffic">Сложность: Легко</p>
-                <p>0 уровень, 0 лекция</p>
-            </div>
-            <div class="col-sm-3 field">
-                <p><a href="#">nickname</a> 28 января 2020 года</p>
-                <a href="#" class="title">Амиго очень умный</a>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem obcaecati exercitationem</p>
-                <button class="opener">Доступна</button>
-                <p class="diffic">Сложность: Легко</p>
-                <p>0 уровень, 0 лекция</p>
-            </div>
-            <div class="col-sm-3 field">
-                <p><a href="#">nickname</a> 28 января 2020 года</p>
-                <a href="#" class="title">Амиго очень умный</a>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem obcaecati exercitationem</p>
-                <button class="opener">Доступна</button>
-                <p class="diffic">Сложность: Легко</p>
-                <p>0 уровень, 0 лекция</p>
-            </div>
-            <div class="col-sm-3 field">
-                <p><a href="#">nickname</a> 28 января 2020 года</p>
-                <a href="#" class="title">Амиго очень умный</a>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem obcaecati exercitationem</p>
-                <button class="opener">Доступна</button>
-                <p class="diffic">Сложность: Легко</p>
-                <p>0 уровень, 0 лекция</p>
-            </div>
-            <div class="col-sm-3 field">
-                <p><a href="#">nickname</a> 28 января 2020 года</p>
-                <a href="#" class="title">Амиго очень умный</a>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem obcaecati exercitationem</p>
-                <button class="opener">Доступна</button>
-                <p class="diffic">Сложность: Легко</p>
-                <p>0 уровень, 0 лекция</p>
-            </div>
-            <div class="col-sm-3 field">
-                <p><a href="#">nickname</a> 28 января 2020 года</p>
-                <a href="#" class="title">Амиго очень умный</a>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem obcaecati exercitationem</p>
-                <button class="closer">Закрыта</button>
-                <p class="diffic">Сложность: Легко</p>
-                <p>0 уровень, 0 лекция</p>
-            </div>
+        <!--<p class="comment">Комментарии(200)</p>
+        <div style="text-align: right; margin-right: 40px;">
+            <input style="width: 95%;" type="text" placeholder="Введите текст сообщения..."><br>
+            <button>Отправить</button>
         </div>
-        <button class="more">Показать еще</button>
+        <div class="fieldcomment">
+            <div class="rowe">
+                <div class="col-sm-1"><a href="#">Ава</a></div>
+                <div class="col-sm-11">
+                    <div class="row">
+                        <p><a href="#">Евгений</a></p>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis rem numquam voluptas doloremque similique cupiditate, quis dicta, fuga, libero neque amet. Omnis laborum quas praesentium nulla dolore in dolorum quasi.</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="#">ответить</a>
+                        </div>
+                        <div class="col-sm-6 rating">
+                            <a href="#">+</a>
+                            <span>+10</span>
+                            <a href="#">-</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rowe">
+                <div class="col-sm-1"><a href="#">Ава</a></div>
+                <div class="col-sm-11">
+                    <div class="row">
+                        <p><a href="#">Евгений</a></p>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis rem numquam voluptas doloremque similique cupiditate, quis dicta, fuga, libero neque amet. Omnis laborum quas praesentium nulla dolore in dolorum quasi.</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="#">ответить</a>
+                        </div>
+                        <div class="col-sm-6 rating">
+                            <a href="#">+</a>
+                            <span>+10</span>
+                            <a href="#">-</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
 </body>
 
 <footer>
