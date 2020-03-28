@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task 2</title>
+    <title>Task 3</title>
     <link rel="stylesheet" href="styleTask.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/ace/1.2.3/min/ace.js" type="text/javascript" charset="utf-8"></script>
+
     <script src="task.js"></script>
 </head>
 
@@ -37,19 +38,23 @@
 <body>
     <div class="body">
         <p class="name">Задача</p>
-        <div class="field" style="height: 420px;">
-            <p> Дополнить программу, чтобы:
+        <div class="field" style="height: 450px;">
+            <p> Давай посчитаем?
                 <ul>
-                    <li>На экран выводилось "Hello, world!"</li>
-                    <li>Окно консоли не закрывалось сразу. Для этого после функции по выводу строки, добавь <code>getch()</code> из библиотеки <code>conio.h</code></li>
-                </ul>
+                    <li>1. Создай переменную целочисленного типа <code>a</code>. Задай ей значение 40;</li>
+                    <li>2. Создай переменную целочисленного типа <code>b</code>. Задай ей значение 14;</li>
+                    <li>3. Создай переменную целочисленного типа <code>c</code>. Задай ей значение, равное остатку от деления <code>a</code> на <code>b</code>. Для корректного выполнения задания воспользуйтесь статьей: <a href="http://cppstudio.com/post/259/"><b>CPPSTUDIO</b></a></li>
+                    <li>4. Выведи все три полученные переменные в консоль, каждую – на новую строчку. <br>Для корректного выполнения задания, видоизмени строку из примера <code> std::cout << stringValue </code> на <code> std::cout << stringValue << std::endl </code>                        </li>
             </p>
-            <textarea style="width: 95%; height: 70%;" contenteditable="true">
+            <textarea style="width: 90%; height: 70%;" contenteditable="true">
                 #include &lt;iostream&gt; 
+                #include &lt;string&gt; 
+
                 int main() 
-                { 
-                    &nbsp;&nbsp;&nbsp;&nbsp;std::cout « "Hello!"; 
-                    &nbsp;&nbsp;&nbsp;&nbsp;return 0; 
+                {
+                    &nbsp;&nbsp;std::string stringValue = "Hello, world!";
+                    &nbsp;&nbsp;std::cout « stringValue;
+                    &nbsp;&nbsp;return 0;
                 }
             </textarea>
             <button>Отправить</button>

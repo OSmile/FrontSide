@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lection 2</title>
+    <title>Lection 3</title>
     <link rel="stylesheet" href="styleLectionWithNum.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -35,19 +35,31 @@
 
 <body>
     <div class="body">
-        <p class="name">Лекция 2</p>
-        <div class="field" style="height: 350px">
-            <p><b>Вывод информации на экран</b></p>
-            <p>Очень важно иметь возможность вывода информации на экран, поскольку это сильно облегчает процесс тестирования, а также вырабатывается привычка фиксировать свои действия – в профессиональных проектах используется логирование происходящей информации
-                в файл. Попробуем добавить вывод в окно консоли информации в нашу программу. <br> Для вывода информации в C++ используется оператор <code>std::cout</code> из библиотеки <code>iostream</code>. Выведем в консоль строчку <b>Hello!</b>.<br>
-                <code> #include &lt;iostream&gt; <br>
+        <p class="name">Лекция 3</p>
+        <div class="field" style="height: 500px">
+            <p><b>Переменные</b></p>
+            <p> Отлично, конечно, работать только с постоянными значениями, но в реальности такого не будет никогда, для этого данные нужно хранить и анализировать. Основная работа в программировании осуществляется с переменными. Они имеют собственный тип,
+                имя, размер, и значение. Более подробно предлагаю почитать тут: <a href="https://metanit.com/cpp/tutorial/2.3.php"><b>METANIT</b></a> или <a href="https://www.tutorialspoint.com/cplusplus/cpp_data_types.htm"><b>TUTORIALSPOINT</b></a>
+                <br>Изложим кратко:<br>
+                <ul>
+                    <li><code>int</code> - Тип для хранения целочисленных переменных. Примеры: <code>int intValue = 354;</code>;</li>
+                    <li><code>float</code>, <code>double</code> - Типы для хранения вещественных чисел. Примеры: <code>float floatValue = -324.0876;</code>;</li>
+                    <li><code>char</code> - Тип для хранения символьных данных. Пример: <code>char charValue = ‘h’;</code>;</li>
+                    <li><code>string</code> - Тип для хранения и работы со строковыми переменными. Доступно при подключении директив <code>iostream</code> и <code>string.h</code>.</li>
+                </ul>
+                Также не забывай, что из одной переменной может быть получена другая переменная. Пример: <code>int a = b + c;</code> <br> Давайте доработаем программу из лекции 2:
+                <code> <br>
+                #include &lt;iostream&gt;<br>
+                #include &lt;string&gt;<br>
+                    <br>
                 int main() <br>
-                { <br> 
-                    &nbsp;&nbsp;&nbsp;&nbsp;std::cout « "Hello!"; <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;return 0; <br>
+                {<br>
+                    &nbsp;&nbsp;std::string stringValue = "Hello, world!";<br>
+                    &nbsp;&nbsp;std::cout « stringValue;<br>
+                    &nbsp;&nbsp;return 0;<br>
                 }<br>
-            </code> <br>
-                <button onclick="window.location.href='../../tasks/task2.html'" style="text-align: center;">Перейти к заданию</button>
+                </code> <br>
+                <button onclick="window.location.href='../../tasks/task3.html'" style="text-align: center;">Перейти к заданию</button>
         </div>
 
 
