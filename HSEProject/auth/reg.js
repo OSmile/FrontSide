@@ -1,11 +1,11 @@
 window.onload = function() {
-    let login = this.document.getElementById("login").value
-    let email = this.document.getElementById("email").value
-    let name = this.document.getElementById("name").value
-    let pass = this.document.getElementById("password").value
     let btn = this.document.getElementById("reg")
 
     btn.addEventListener("click", () => {
+        let login = this.document.getElementById("login").value
+        let email = this.document.getElementById("email").value
+        let name = this.document.getElementById("name").value
+        let pass = this.document.getElementById("password").value
         this.fetch("http://localhost:5000/user",
         {
             headers: {
