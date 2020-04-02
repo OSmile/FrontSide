@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lection 2</title>
+    <title>Lection 4</title>
     <link rel="stylesheet" href="styleLectionWithNum.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -35,19 +35,27 @@
 
 <body>
     <div class="body">
-        <p class="name">Лекция 2</p>
-        <div class="field" style="height: 350px">
-            <p><b>Вывод информации на экран</b></p>
-            <p>Очень важно иметь возможность вывода информации на экран, поскольку это сильно облегчает процесс тестирования, а также вырабатывается привычка фиксировать свои действия – в профессиональных проектах используется логирование происходящей информации
-                в файл. Попробуем добавить вывод в окно консоли информации в нашу программу. <br> Для вывода информации в C++ используется оператор <code>std::cout</code> из библиотеки <code>iostream</code>. Выведем в консоль строчку <b>Hello!</b>.<br>
-                <code> #include &lt;iostream&gt; <br>
-                int main() <br>
-                { <br> 
-                    &nbsp;&nbsp;&nbsp;&nbsp;std::cout « "Hello!"; <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;return 0; <br>
+        <p class="name">Лекция 4</p>
+        <div class="field" style="height: 450px">
+            <p><b>Ввод данных</b></p>
+            <p> Поговорим про ввод данных с клавиатуры. Для того, чтобы ввести данные, используется оператор <code>std::cin</code>. Также, чтобы сохранить куда-то введенное значение, будьте готовы создать переменную. Также хорошим тоном будет вывести сообщение,
+                что Вы запрашиваете от пользователя. Листинг программы:<br>
+                <code>
+                #include &lt;iostream&gt;<br>
+                #include &lt;conio.h>&gt;<br>
+                <br>
+                int main()<br>
+                {<br>
+                    &nbsp;&nbsp;std::cout«”Введите число от 0 до 20:\n”;<br>
+                    &nbsp;&nbsp;int number;<br>
+                    &nbsp;&nbsp;std::cin»number;<br>
+                    &nbsp;&nbsp;//Это однострочный комментарий. Он не обрабатывается в ходе работы программы<br>
+                    &nbsp;&nbsp;//Допустим, введено значение 6<br>
+                    &nbsp;&nbsp;std::cout«”Ваше число: ”«number«”\n”; //Ваше число: 6<br>
+                    &nbsp;&nbsp;getch();<br>
                 }<br>
-            </code> <br>
-                <button onclick="window.location.href='../../tasks/tasks_syntax/task2.html'" style="text-align: center;">Перейти к заданию</button>
+                </code> Операция <code>std::cin</code> будет работать до нажатия клавиши Enter. Только после неё ввод закончится, и Вы получите значение переменной.<br>
+                <button onclick="window.location.href='../../tasks/tasks_syntax/task4.html'" style="text-align: center;">Перейти к заданию</button>
         </div>
 
 

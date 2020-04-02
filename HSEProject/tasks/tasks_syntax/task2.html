@@ -4,12 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lection 2</title>
-    <link rel="stylesheet" href="styleLectionWithNum.css">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="styleTask.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
-    <script src="lection.js"></script>
+    <script src="https://cdn.jsdelivr.net/ace/1.2.3/min/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="task.js"></script>
 </head>
 
 <header id="head">
@@ -35,23 +36,70 @@
 
 <body>
     <div class="body">
-        <p class="name">Лекция 2</p>
-        <div class="field" style="height: 350px">
-            <p><b>Вывод информации на экран</b></p>
-            <p>Очень важно иметь возможность вывода информации на экран, поскольку это сильно облегчает процесс тестирования, а также вырабатывается привычка фиксировать свои действия – в профессиональных проектах используется логирование происходящей информации
-                в файл. Попробуем добавить вывод в окно консоли информации в нашу программу. <br> Для вывода информации в C++ используется оператор <code>std::cout</code> из библиотеки <code>iostream</code>. Выведем в консоль строчку <b>Hello!</b>.<br>
-                <code> #include &lt;iostream&gt; <br>
-                int main() <br>
-                { <br> 
-                    &nbsp;&nbsp;&nbsp;&nbsp;std::cout « "Hello!"; <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;return 0; <br>
-                }<br>
-            </code> <br>
-                <button onclick="window.location.href='../../tasks/tasks_syntax/task2.html'" style="text-align: center;">Перейти к заданию</button>
+        <p class="name">Задача</p>
+        <div class="field" style="height: 420px;">
+            <p> Дополнить программу, чтобы:
+                <ul>
+                    <li>На экран выводилось "Hello, world!"</li>
+                    <li>Окно консоли не закрывалось сразу. Для этого после функции по выводу строки, добавь <code>getch()</code> из библиотеки <code>conio.h</code></li>
+                </ul>
+            </p>
+            <textarea style="width: 95%; height: 70%;" contenteditable="true">
+                #include &lt;iostream&gt; 
+                int main() 
+                { 
+                    &nbsp;&nbsp;&nbsp;&nbsp;std::cout « "Hello!"; 
+                    &nbsp;&nbsp;&nbsp;&nbsp;return 0; 
+                }
+            </textarea>
+            <button>Отправить</button>
+            <button>Прикрепить файл</button>
         </div>
-
-
-
+        <!--<p class="comment">Комментарии(200)</p>
+        <div style="text-align: right; margin-right: 40px;">
+            <input style="width: 95%;" type="text" placeholder="Введите текст сообщения..."><br>
+            <button>Отправить</button>
+        </div>
+        <div class="fieldcomment">
+            <div class="rowe">
+                <div class="col-sm-1"><a href="#">Ава</a></div>
+                <div class="col-sm-11">
+                    <div class="row">
+                        <p><a href="#">Евгений</a></p>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis rem numquam voluptas doloremque similique cupiditate, quis dicta, fuga, libero neque amet. Omnis laborum quas praesentium nulla dolore in dolorum quasi.</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="#">ответить</a>
+                        </div>
+                        <div class="col-sm-6 rating">
+                            <a href="#">+</a>
+                            <span>+10</span>
+                            <a href="#">-</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rowe">
+                <div class="col-sm-1"><a href="#">Ава</a></div>
+                <div class="col-sm-11">
+                    <div class="row">
+                        <p><a href="#">Евгений</a></p>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis rem numquam voluptas doloremque similique cupiditate, quis dicta, fuga, libero neque amet. Omnis laborum quas praesentium nulla dolore in dolorum quasi.</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="#">ответить</a>
+                        </div>
+                        <div class="col-sm-6 rating">
+                            <a href="#">+</a>
+                            <span>+10</span>
+                            <a href="#">-</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
 </body>
 
 <footer>

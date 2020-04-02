@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lection 2</title>
+    <title>Lection 5</title>
     <link rel="stylesheet" href="styleLectionWithNum.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
@@ -35,19 +35,17 @@
 
 <body>
     <div class="body">
-        <p class="name">Лекция 2</p>
-        <div class="field" style="height: 350px">
-            <p><b>Вывод информации на экран</b></p>
-            <p>Очень важно иметь возможность вывода информации на экран, поскольку это сильно облегчает процесс тестирования, а также вырабатывается привычка фиксировать свои действия – в профессиональных проектах используется логирование происходящей информации
-                в файл. Попробуем добавить вывод в окно консоли информации в нашу программу. <br> Для вывода информации в C++ используется оператор <code>std::cout</code> из библиотеки <code>iostream</code>. Выведем в консоль строчку <b>Hello!</b>.<br>
-                <code> #include &lt;iostream&gt; <br>
-                int main() <br>
-                { <br> 
-                    &nbsp;&nbsp;&nbsp;&nbsp;std::cout « "Hello!"; <br>
-                    &nbsp;&nbsp;&nbsp;&nbsp;return 0; <br>
-                }<br>
-            </code> <br>
-                <button onclick="window.location.href='../../tasks/tasks_syntax/task2.html'" style="text-align: center;">Перейти к заданию</button>
+        <p class="name">Лекция 5</p>
+        <div class="field" style="height: 420px">
+            <p><b>Промежуточный итог</b></p>
+            <p>Итак, в предыдущих лекциях были показаны механизмы, как вводить/выводить информацию; <br>Как хранить данные в переменных, их область видимости; <br>Были затронуты арифметические операции. <br>Также были даны практические задания для отработки данных навыков. <br>Ко всему к этому хотелось бы добавить следующее:<br>
+                Правилом хорошего тона является <b>не использовать в коде независимые значения констант</b>. Другими словами, очень плохо писать нечто подобное: <code>int a = b + 5;</code>. Что в данном контексте несет собой число 5? Как это понять? Используй выражение: <code>const int value = 5;</code>, добавь к нему комментарий, или дай осмысленное название, чтобы тот, кто поддерживал твой код понимал, какую логику ты закладывал.<br>
+                <b>Комментарии</b>. Как уже было сказано, существуют в коде однострочные комментарии: <code> // Комментарий </code>. Удобно для предоставления краткой информации о строке кода.<br>
+                Почитай о комментариях тут: <a href="https://ravesli.com/urok-9-kommentarii-v-s/"><b>RAVESLI</b></a>. Подробно описаны виды комментариев, правила их составления, а также их применимость в коде. Будь готов ознакомиться с инструментами и правилами документирования кода. <br>
+                Для корректного форматированного вывода информации, ознакомься с <a href="http://kvodo.ru/urok-10-formatirovannyiy-vvod-vyivod-v-c.html"><b>KVODO</b></a> . Манипуляторы с объяснениями и примерами кода.<br>
+                Повтори информацию о типах данных, она скоро нам пригодится.
+                </p>
+                <button onclick="window.location.href='../../tasks/tasks_syntax/task5.html'" style="text-align: center;">Перейти к заданию</button>
         </div>
 
 
