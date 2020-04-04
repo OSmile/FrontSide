@@ -42,34 +42,31 @@ window.onload = function() {
             var div = document.createElement("div");
             div.className = "col-sm-3 field";
 
-            div.innerHTML = `<p><a href="#">nickname</a> 28 января 2020 года</p>
-            <a href="#" class="title">Обучение программированию на Java. Уроки с нуля</a>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem obcaecati exercitationem praesentium natus dolorem vitae velit provident amet aliquid a perferendis, veniam eveniet ipsam. At possimus odit ratione. Illo, sapiente.</p>
-            <!-- <button class="close">Недоступна</button> -->
-            <button class="closer">Недоступна</button>
-            <p>0 уровень, 0 лекция</p>`
+            div.innerHTML = `<p>Задача 7</p>
+            <a href="#" class="title">Условия</a>
+            <p>Обработка флага <br>Анализ результата</p>
+            <button class="opener" onclick="window.location.href='../tasks/tasks_syntax_pro/task1.html'">Доступна</button>
+            <p>1 уровень, 1 лекция</p>`
             docfrag.appendChild(div);
 
             var div = document.createElement("div");
             div.className = "col-sm-3 field";
 
-            div.innerHTML = `<p><a href="#">nickname</a> 28 января 2020 года</p>
-            <a href="#" class="title">Обучение программированию на Java. Уроки с нуля</a>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem obcaecati exercitationem praesentium natus dolorem vitae velit provident amet aliquid a perferendis, veniam eveniet ipsam. At possimus odit ratione. Illo, sapiente.</p>
-            <!-- <button class="close">Недоступна</button> -->
-            <button class="closer">Недоступна</button>
-            <p>0 уровень, 0 лекция</p>`
+            div.innerHTML = `<p>Задача 8</p>
+            <a href="#" class="title">Условия. Продолжение</a>
+            <p>Ввод значений с клавиатуры <br>Проверка значений на правильность <br>Использование условий</p>
+            <button class="opener" onclick="window.location.href='../tasks/tasks_syntax_pro/task2.html'">Доступна</button>
+            <p>1 уровень, 2 лекция</p>`
             docfrag.appendChild(div);
 
             var div = document.createElement("div");
             div.className = "col-sm-3 field";
 
-            div.innerHTML = `<p><a href="#">nickname</a> 28 января 2020 года</p>
-            <a href="#" class="title">Обучение программированию на Java. Уроки с нуля</a>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem obcaecati exercitationem praesentium natus dolorem vitae velit provident amet aliquid a perferendis, veniam eveniet ipsam. At possimus odit ratione. Illo, sapiente.</p>
-            <!-- <button class="close">Недоступна</button> -->
-            <button class="closer">Недоступна</button>
-            <p>0 уровень, 0 лекция</p>`
+            div.innerHTML = `<p>Задача 9</p>
+            <a href="#" class="title">Условия. Оператор switch</a>
+            <p>Switch <br>Задача на дни недели</p>
+            <button class="opener" onclick="window.location.href='../tasks/tasks_syntax_pro/task3.html'">Доступна</button>
+            <p>1 уровень, 3 лекция</p>`
             docfrag.appendChild(div);
 
             var div = document.createElement("div");
@@ -85,6 +82,6 @@ window.onload = function() {
 
 
         })
-        lections.appendChild(docfrag)
+        tasks.appendChild(docfrag)
     }
 }

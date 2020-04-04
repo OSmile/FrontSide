@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="styleTask.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/ace/1.2.3/min/ace.js" type="text/javascript" charset="utf-8"></script>
+    <script src="task.js"></script>
+</head>
+
+<header id="head">
+    <a href="../../main/main.html" class="logo col-sm-9">HSERUSH</a>
+    <div class="col-sm-3 icons">
+        <a href="#"><img src="../../src/bell-2.svg" width="20" /></a>
+        <a href="../../profile/main.html"><img src="../../src/8c125dbdf1808dd9e322e2d294bd7303.png" width="24" /></a>
+        <a href="#" id="list"><img src="../../src/list.png" width="20" /></a>
+    </div>
+    <!-- <div class="row">
+          <div class="col-sm-10"></div>
+          <div class="col-sm-2 ros">
+               <ul>
+                    <li><a href="#">Курс</a></li>
+                    <li><a href="#">Задачи</a></li>
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Истории успеха</a></li>
+                    <li><a href="#">Статьи</a></li>
+               </ul>
+          </div>
+     </div> -->
+</header>
+
+<body>
+    <div class="body">
+        <p class="name">Задача</p>
+        <div class="field" style="height: 700px;">
+            <p>Порешаем? <br>
+                Хотелось бы заметить, что существует такой термин: «Программирование под дурака». Означает, что пользователь может вводить значения вопреки всем сказанным условиям: <br>Сказано ввести число от нуля, до пяти – он вводит число 125. В данном случае, вся Ваша логика пойдёт не так.<br>
+                Запрограммируем алгоритм решения квадратного уравнения.<br>
+                a*x<sup>2</sup> + b*x + c = 0;<br>
+                <ur>
+                <li>Введи значения с клавиатуры: «a», «b», «c»</li>
+                <li>Проверь, если значение «а» равно 0 – то x = - c / b. Также проверь, что b не нуль, на нуль делить нельзя </li>
+                <li>Значение «а» не равно нулю – считаем дискриминант: b * b – 4 * a * c</li>
+                <li>Если Дискриминант отрицательный – решений нет;</li>
+                <li>Если дискриминант равен нулю - решение одно: x = - b / (2 * a)</li>
+                <li>Если дискриминант положительный: x1 = (-b + sqrt(D)) / (2 * a), x2 = (-b – sqrt(D)) / (2 * a)</li>
+                <li>Выведи результаты на экран</li>
+                <li>Подумай, можно ли оптимизировать этот алгоритм? Много условий – тоже плохо</li>
+                </ur></p>
+            <textarea style="width: 95%; height: 45%;" contenteditable="true">
+                #include &lt;iostream&gt; 
+                    
+            </textarea>
+            <button>Отправить</button>
+            <button>Прикрепить файл</button>
+        </div>
+        <!--<p class="comment">Комментарии(200)</p>
+        <div style="text-align: right; margin-right: 40px;">
+            <input style="width: 95%;" type="text" placeholder="Введите текст сообщения..."><br>
+            <button>Отправить</button>
+        </div>
+        <div class="fieldcomment">
+            <div class="rowe">
+                <div class="col-sm-1"><a href="#">Ава</a></div>
+                <div class="col-sm-11">
+                    <div class="row">
+                        <p><a href="#">Евгений</a></p>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis rem numquam voluptas doloremque similique cupiditate, quis dicta, fuga, libero neque amet. Omnis laborum quas praesentium nulla dolore in dolorum quasi.</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="#">ответить</a>
+                        </div>
+                        <div class="col-sm-6 rating">
+                            <a href="#">+</a>
+                            <span>+10</span>
+                            <a href="#">-</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="rowe">
+                <div class="col-sm-1"><a href="#">Ава</a></div>
+                <div class="col-sm-11">
+                    <div class="row">
+                        <p><a href="#">Евгений</a></p>
+                    </div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis rem numquam voluptas doloremque similique cupiditate, quis dicta, fuga, libero neque amet. Omnis laborum quas praesentium nulla dolore in dolorum quasi.</p>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <a href="#">ответить</a>
+                        </div>
+                        <div class="col-sm-6 rating">
+                            <a href="#">+</a>
+                            <span>+10</span>
+                            <a href="#">-</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+</body>
+
+<footer>
+    <div class="row linksrow">
+        <div class="logosoc col-sm-3">
+            <a class="logof" href="#">HSERUSH</a>
+            <p>HSERush - это интерактивный онлайн-курс по изучению C++-программирования с нуля. Он содержит огромное количество задач.</p>
+            <div class="row socials">
+                <a href="#" style="margin-left: 10px"><img src="../../src/fb_2f3447.svg" alt="fb"></a>
+                <a href="#" style="margin-left: 10px"><img src="../../src/vk_4a441e.svg" alt="vk"></a>
+                <a href="#" style="margin-left: 10px"><img src="../../src/youtube_c2761a.svg" alt="yt"></a>
+                <a href="#" style="margin-left: 10px"><img src="../../src/tg_8a4f9d.svg" alt="tg"></a>
+                <a href="#" style="margin-left: 10px"><img src="../../src/ig_e74f4d.svg" alt="ig"></a>
+            </div>
+        </div>
+        <div class="study col-sm-3">
+            <p class="info">Обучение</p>
+            <ul>
+                <li><a href="#">C</a></li>
+                <li><a href="#">C++</a></li>
+                <li><a href="#">Каталог курсов</a></li>
+            </ul>
+        </div>
+        <div class="about col-sm-3">
+            <p class="info">О компании</p>
+            <ul>
+                <li><a href="#">Об университете</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Вакансии</a></li>
+            </ul>
+        </div>
+        <div class="rules col-sm-3">
+            <p class="info">Правовая информация</p>
+            <ul>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Условия пользования</a></li>
+                <li><a href="#">Договор оферты</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="copyrow">
+        <p class="copyright">© ВШЭ 16ПИ, 2020</p>
+    </div>
+</footer>
+
+</html>
