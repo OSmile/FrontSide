@@ -1,21 +1,9 @@
 window.onload = function() {
-    let btn = document.getElementById("btn")
+    var email = document.getElementById("email")
+    var pass = document.getElementById("password")
+    var btn = document.getElementById("btn")
 
-    btn.addEventListener("click", () => {
-        let login = document.getElementById("login").value
-        let pass = document.getElementById("password").value
-        let url = new this.URL("http://localhost:5000/user")
-        url.search = new this.URLSearchParams({
-            'login': login,
-            'password': pass
-        })
-        this.fetch(url)
-            .then(res => res.json())
-                .then(
-                    (result) => {
-                        this.localStorage.setItem("login", login)
-                        this.alert("Success")
-                    }
-                )
+    btn.addEventListener("click", function() {
+        if (email && pass) alert("OK!")
     })
 }
