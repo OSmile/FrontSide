@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lections</title>
+    <link rel="stylesheet" href="styleLection.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:800&display=swap" rel="stylesheet">
+    <script src="lection.js"></script>
+</head>
+
+<header id="head">
+    <a href="../../main/main.html" class="logo col-sm-9">HSERUSH</a>
+    <div class="col-sm-3 icons">
+        <a href="#"><img src="../../src/bell-2.svg" width="20" /></a>
+        <a href="../../profile/main.html"><img src="../../src/8c125dbdf1808dd9e322e2d294bd7303.png" width="24" /></a>
+        <a href="#" id="list"><img src="../../src/list.png" width="20" /></a>
+    </div>
+    <!-- <div class="row">
+          <div class="col-sm-10"></div>
+          <div class="col-sm-2 ros">
+               <ul>
+                    <li><a href="#">Курс</a></li>
+                    <li><a href="#">Задачи</a></li>
+                    <li><a href="#">Помощь</a></li>
+                    <li><a href="#">Истории успеха</a></li>
+                    <li><a href="#">Статьи</a></li>
+               </ul>
+          </div>
+     </div> -->
+</header>
+
+<body>
+    <div class="body">
+        <p style="text-align: left; margin-left: 50px; font-weight: 900;">Курс</p>
+        <div class="points">
+            <a href="../map.html">Карта квестов</a>
+            <a href="#" style="margin-left: 10px; text-decoration: underline !important;">Лекции по C++ Syntax Pro</a>
+        </div>
+        <!-- <div class="rowe">
+            <input type="text" placeholder="Поиск...">
+            <span>Тут квест</span><img src="../src/download.svg" width="10" style="margin-left: 5px;" alt="arrow">
+            <span>Тут уровень</span><img src="../src/download.svg" width="10" style="margin-left: 5px;" alt="arrow">
+            <span>Тут статус</span><img src="../src/download.svg" width="10" style="margin-left: 5px;" alt="arrow">
+        </div> -->
+        <div class="rowe" id="lections">
+            <div class="col-sm-3 field">
+                <a href="#" class="title">Введение</a>
+                <p>Минутка мотивации. <br> На текущий момент, в мире развивается IT-технологии.<br> Однако, для этого нужна база, выражающаяся в умениях и профессиональном опыте.
+                </p>
+                <button class="opener" onclick="window.location.href='intro.html'">Открыть</button>
+                <p>0 уровень, 0 лекция</p>
+            </div>
+            <div class="col-sm-3 field">
+                <a href="#" class="title">Строение начального файла</a>
+                <p>Строения файла <i>MainSource.cpp</i> <br> #include &lt;iostream&gt;.<br> int main()</p>
+                <button class="opener" onclick="window.location.href='lection1.html'">Открыть</button>
+                <p>0 уровень, 1 лекция</p>
+            </div>
+            <div class="col-sm-3 field">
+                <a href="#" class="title">Вывод информации на экран</a>
+                <p>Очень важно иметь возможность вывода информации на экран<br> Оператор <i>std::cout</i> <br> Библиотека <i>iostream</i>
+                </p>
+                <button class="opener" onclick="window.location.href='lection2.html'">Открыть</button>
+                <p>0 уровень, 2 лекция</p>
+            </div>
+            <div class="col-sm-3 field">
+                <a href="#" class="title">Переменные</a>
+                <p> <code>int</code> - целочисленныe переменныe<br>
+                    <code>float</code>, <code>double</code> - вещественныe числa <br>
+                    <code>char</code> - символьныe данныe <br>
+                    <code>string</code> - строковыe переменныe</p>
+                <button class="opener" onclick="window.location.href='lection3.html'">Открыть</button>
+                <p>0 уровень, 3 лекция</p>
+            </div>
+            <div class="col-sm-3 field">
+                <a href="#" class="title">Ввод данных</a>
+                <p>Ввод данных с клавиатуры.<br>
+                    <code>std::cin</code><br> Использование однострочного комментария "//"<br>
+                </p>
+                <button class="opener" onclick="window.location.href='lection4.html'">Открыть</button>
+                <p>0 уровень, 4 лекция</p>
+            </div>
+            <div class="col-sm-3 field">
+                <a href="#" class="title">Промежуточный итог</a>
+                <p>Информация о комментариях<br> Форматированный вывод информации<br> Несколько полезных советов на будущее</p>
+                <!-- <button class="close">Недоступна</button> -->
+                <button class="opener" onclick="window.location.href='lection5.html'">Открыть</button>
+                <p>0 уровень, 5 лекция</p>
+            </div>
+        </div>
+        <button class="more" id="btn_more">Показать еще</button>
+</body>
+
+<footer>
+    <div class="row linksrow">
+        <div class="logosoc col-sm-3">
+            <a class="logof" href="#">HSERUSH</a>
+            <p>HSERush - это интерактивный онлайн-курс по изучению C++-программирования с нуля. Он содержит огромное количество задач.</p>
+            <div class="row socials">
+                <a href="#" style="margin-left: 10px"><img src="../../src/fb_2f3447.svg" alt="fb"></a>
+                <a href="#" style="margin-left: 10px"><img src="../../src/vk_4a441e.svg" alt="vk"></a>
+                <a href="#" style="margin-left: 10px"><img src="../../src/youtube_c2761a.svg" alt="yt"></a>
+                <a href="#" style="margin-left: 10px"><img src="../../src/tg_8a4f9d.svg" alt="tg"></a>
+                <a href="#" style="margin-left: 10px"><img src="../../src/ig_e74f4d.svg" alt="ig"></a>
+            </div>
+        </div>
+        <div class="study col-sm-3">
+            <p class="info">Обучение</p>
+            <ul>
+                <li><a href="#">C</a></li>
+                <li><a href="#">C++</a></li>
+                <li><a href="#">Каталог курсов</a></li>
+            </ul>
+        </div>
+        <div class="about col-sm-3">
+            <p class="info">О компании</p>
+            <ul>
+                <li><a href="#">Об университете</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Вакансии</a></li>
+            </ul>
+        </div>
+        <div class="rules col-sm-3">
+            <p class="info">Правовая информация</p>
+            <ul>
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Условия пользования</a></li>
+                <li><a href="#">Договор оферты</a></li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="copyrow">
+        <p class="copyright">© ВШЭ 16ПИ, 2020</p>
+    </div>
+</footer>
+
+</html>

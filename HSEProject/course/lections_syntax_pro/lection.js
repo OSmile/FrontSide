@@ -6,8 +6,9 @@ window.onload = function() {
 
     if (list) {
         list.addEventListener("click", function() {
+            var div = document.createElement("div");
             if (click) {
-                var div = document.createElement("div");
+
                 div.className = 'class="row"';
 
                 div.innerHTML = `<div class="col-sm-10"></div>
@@ -21,12 +22,70 @@ window.onload = function() {
                 </ul>
             </div>`
                 div_menu.appendChild(div);
-                click = false
+                click = false;
+            } else {
+                div_menu.removeChild(div_menu.lastChild);
+                click = true;
             }
         })
         head.appendChild(div_menu)
     }
 
+    var lections = document.getElementById('lections');
+    var docfrag = document.createElement("div")
 
+    var btn = document.getElementById('btn_more')
+    if (btn != 0) {
+        btn.addEventListener("click", function() {
+            this.parentElement.removeChild(this);
+
+            var div = document.createElement("div");
+            div.className = "col-sm-3 field";
+
+            div.innerHTML = `<p><a href="#">nickname</a> 28 января 2020 года</p>
+            <a href="#" class="title">Обучение программированию на Java. Уроки с нуля</a>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem obcaecati exercitationem praesentium natus dolorem vitae velit provident amet aliquid a perferendis, veniam eveniet ipsam. At possimus odit ratione. Illo, sapiente.</p>
+            <!-- <button class="close">Недоступна</button> -->
+            <button class="closer">Недоступна</button>
+            <p>0 уровень, 0 лекция</p>`
+            docfrag.appendChild(div);
+
+            var div = document.createElement("div");
+            div.className = "col-sm-3 field";
+
+            div.innerHTML = `<p><a href="#">nickname</a> 28 января 2020 года</p>
+            <a href="#" class="title">Обучение программированию на Java. Уроки с нуля</a>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem obcaecati exercitationem praesentium natus dolorem vitae velit provident amet aliquid a perferendis, veniam eveniet ipsam. At possimus odit ratione. Illo, sapiente.</p>
+            <!-- <button class="close">Недоступна</button> -->
+            <button class="closer">Недоступна</button>
+            <p>0 уровень, 0 лекция</p>`
+            docfrag.appendChild(div);
+
+            var div = document.createElement("div");
+            div.className = "col-sm-3 field";
+
+            div.innerHTML = `<p><a href="#">nickname</a> 28 января 2020 года</p>
+            <a href="#" class="title">Обучение программированию на Java. Уроки с нуля</a>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem obcaecati exercitationem praesentium natus dolorem vitae velit provident amet aliquid a perferendis, veniam eveniet ipsam. At possimus odit ratione. Illo, sapiente.</p>
+            <!-- <button class="close">Недоступна</button> -->
+            <button class="closer">Недоступна</button>
+            <p>0 уровень, 0 лекция</p>`
+            docfrag.appendChild(div);
+
+            var div = document.createElement("div");
+            div.className = "col-sm-3 field";
+
+            div.innerHTML = `<p><a href="#">nickname</a> 28 января 2020 года</p>
+            <a href="#" class="title">Обучение программированию на Java. Уроки с нуля</a>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quidem obcaecati exercitationem praesentium natus dolorem vitae velit provident amet aliquid a perferendis, veniam eveniet ipsam. At possimus odit ratione. Illo, sapiente.</p>
+            <!-- <button class="close">Недоступна</button> -->
+            <button class="closer">Недоступна</button>
+            <p>0 уровень, 0 лекция</p>`
+            docfrag.appendChild(div);
+
+
+        })
+        lections.appendChild(docfrag)
+    }
 
 }
